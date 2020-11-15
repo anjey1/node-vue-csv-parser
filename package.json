@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "npm run build:vue-dep && npm run build:vue-start node ./bin/www",
     "build:vue-dep": "npm install client",
-    "build:vue-start": "npm run serve client",
-    "build": "npm run build:vue-dep && npm run build:vue-start"
+    "build:vue-start": "npm run build client"
   },
   "heroku-run-build-script": true,
   "dependencies": {
