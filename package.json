@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "build:vue-dep": "npm install ../server/client",
     "build:vue-start": "npm run serve ../server/client",
-    "build": "run-s build:*"
+    "build": "npm run build:vue-dep && npm run build:vue-start"
   },
   "heroku-run-build-script": true,
   "dependencies": {
