@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "",
-    "build": "",
-    "start": "vue-cli-service serve && (cd server && npm install) && (cd server && npm start)",
+    "build": "(cd server && npm install) && (cd server && npm start)",
+    "start": "vue-cli-service serve",
     "lint": "vue-cli-service lint"
   },
   "heroku-run-build-script": true,
