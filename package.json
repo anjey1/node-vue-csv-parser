@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run build:vue-dep && npm run build:vue-start node ./bin/www",
+    "start": "npm run build:vue-dep && npm run build:vue-start && node ./bin/www",
     "build:vue-dep": "npm install client",
     "build:vue-start": "npm run build client"
   },
