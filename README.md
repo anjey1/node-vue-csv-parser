@@ -1,2 +1,2 @@
-# node-vue-csv-parser
-node-vue-csv-parser
+# node-vue-csv-viewer
+node-vue-csv-viewer
