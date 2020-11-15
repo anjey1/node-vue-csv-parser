@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "",
     "build": "",
-    "start": "vue-cli-service serve & (cd server && npm install) & (cd server && npm start --port 3000)",
+    "start": "vue-cli-service serve && (cd server && npm install) && (cd server && npm start)",
     "lint": "vue-cli-service lint"
   },
   "heroku-run-build-script": true,
