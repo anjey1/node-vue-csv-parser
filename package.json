@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build:vue-dep": "npm install ../server/client",
+    "build:vue-start": "npm run serve ../server/client",
+    "build": "run-s build:*"
   },
+  "heroku-run-build-script": true,
   "dependencies": {
     "axios": "^0.21.0",
     "cookie-parser": "~1.4.4",
