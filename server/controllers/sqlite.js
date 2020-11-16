@@ -1,6 +1,6 @@
 const sqlite3 = require('sqlite3').verbose()
 const axios = require('axios');
-const db = new sqlite3.Database('../db/restaurants.db', (err) => {
+const db = new sqlite3.Database('restaurants.db', (err) => {
 	if (err) {
 		console.error(err.message);
 	}
