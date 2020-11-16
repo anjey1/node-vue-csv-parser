@@ -9,7 +9,6 @@ const db = new sqlite3.Database('restaurants.db', (err) => {
 
 exports.getRests = async (req, res) => {
 	db.all('SELECT rowid AS id, name, type, phone, location FROM restaurants', function (err, rows) {
-		if(err) return cb(err);
 		return response(rows);
 	});
 	function response(list){
